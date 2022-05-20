@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/localcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Portfolio</title>
+</head>
+
+<body class="my-component">
+    <!--------------------------------------HEADER_SECTION------------------------------------------------------->
+    <header class="section sec1 home show d-flex justify-content-center align-items-center" id="home">  
+        <div class="blendimg"></div>      
+        <div class="header-content">
+           <div class="left-header">  <!--Left side home -->
+               <h1 class="name">
+                   Hi I'm <span>SAGAR BERA</span>
+                 <h3>A web Delvoloper</h3> 
+               </h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eius fuga optio omnis error quibusdam nostrum maiores ipsa quos ab veritatis dolores illo similique blanditiis dolore praesentium beatae illum aperiam! Beatae eveniet iste unde.</p>
+               <div class="btn-con">
+                   <a href="files/cv.pdf" class="main-btn">
+                   <span class="btn-text">Download CV</span>
+                   <span class="btn-icon"><i class="fa fa-download" aria-hidden="true"></i></span>
+                </a>
+               </div>
+            </div>
+            <div class="right-header"> <!--Right Side home -->
+                <div class="shape triangle"></div>
+                <div class="shape triangle2"></div>
+                <div class="triangle3 popdown">
+                    <div class="img"></div>
+                </div>
+           </div>
+        </div>
+    </header>
+    <!--------------------------------------MAIN_SECTION--------------------------------------------------------->
+    <main>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 blogs" id="blogs"></section>
+        <section class="section sec5 contact" id="contact"></section>
+    </main>
+    <!--------------------------------------CONTROLLER_SECTION--------------------------------------------------->
+    <div class="controls d-flex flex-column justify-content-center align-items-center">
+        <div class="control control-1 activeIt" >
+            <i class="fa fa-home shift" aria-hidden="true" data-id="home"></i>
+            <h3 class="float">Home</h3>
+        </div>
+        <div class="control control-2" >
+            <i class="fa fa-user shift" aria-hidden="true" data-id="about"></i>
+            <h3 class="float">About</h3>
+        </div>
+        <div class="control control-3">
+            <i class="fa fa-briefcase shift" aria-hidden="true" data-id="portfolio"></i>
+            <h3 class="float">Portfolio</h3>
+        </div>
+        <div class="control control-4" >
+            <i class="fa fa-newspaper shift" aria-hidden="true" data-id="blogs"></i>
+        <h3 class="float">Blogs</h3>
+        </div>
+        <div class="control control-5" >
+            <i class="fa fa-envelope-open shift" aria-hidden="true" data-id="contact"></i>
+            <div class="float d-flex justify-content-left align-items-center">
+               <h3 class="">Contact</h3>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------SCRIPT_SECTION---------------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
