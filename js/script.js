@@ -18,9 +18,9 @@ function changePage() {
                 opn.classList.remove('show');
             })
             // e.target.classList.add('show');
-            sections.forEach((section) => {
-                section.classList.remove('show');
-            })
+            // sections.forEach((section) => {
+            //     section.classList.remove('show');
+            // })
             element = document.getElementById(id);
             element.classList.add('show');
         }
