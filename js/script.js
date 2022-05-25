@@ -44,3 +44,39 @@ function hover(){
         });
 }
 hover();
+
+//Role Section..
+roles=[" A Passionate Designer"," A Web Developer"," Youtuber"];
+let count=0;
+let index=0;
+let currentText='';
+let letter='';
+function sleep(ms){
+    return new Promise(resolve=>setTimeout(resolve,ms));
+}
+async function Call(ms){
+    while(index>0){
+    letter=currentText.slice(0,index--);
+    document.querySelector('.role').textContent=letter; 
+    await sleep(ms);
+    }
+}
+
+(async function type(){
+    if(count===roles.length){
+        count=0;
+    }
+    currentText=roles[count];
+    letter=currentText.slice(0,++index);
+    document.querySelector('.role').textContent=letter;
+    if(letter.length===currentText.length){
+        count++; 
+      await sleep(3000); 
+      document.querySelector('.role').classList.add('border-red');
+      document.querySelectorAll('.cngtored').forEach(opn=> opn.classList.add('color-red'));           
+      await Call(300); 
+      document.querySelector('.role').classList.remove('border-red');    
+      document.querySelectorAll('.cngtored').forEach(opn=> opn.classList.remove('color-red'));           
+    }
+    setTimeout(type,500);
+}())
