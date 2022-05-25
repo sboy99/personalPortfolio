@@ -37,6 +37,19 @@ body {
   left: 1%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .controls .control {
@@ -1339,5 +1352,183 @@ section {
           transform: translateX(100%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 95%;
+  }
+  header {
+    padding: 0;
+  }
+  section {
+    padding: 0;
+  }
+  .home .header-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .home .header-content .left-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .header-content .left-header .name {
+    width: 100%;
+    right: 0 !important;
+    text-align: center !important;
+  }
+  .home .header-content .left-header h1 {
+    margin-bottom: o !important;
+  }
+  .home .header-content .left-header p {
+    width: 100%;
+  }
+  .home .header-content .left-header h3 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 2rem;
+  }
+  .home .header-content .left-header .btn-con {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 1.5rem;
+  }
+  .home .header-content .right-header {
+    display: none;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--bgcol);
+  }
+  .controls .control {
+    margin: .5rem;
+  }
+  .controls .float {
+    display: none;
+  }
+  .about {
+    padding: 2rem;
+  }
+  .about .main-title h1 {
+    font-size: 150% !important;
+  }
+  .about .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .about .about-container .l-con {
+    padding: 0 2rem !important;
+  }
+  .about .about-container .l-con h4 {
+    font-size: 1.5rem;
+  }
+  .about .about-container .l-con h4 span {
+    font-size: 175%;
+  }
+  .about .about-container .r-con .abt-item .abt-txt {
+    width: 100%;
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .about-container .r-con .abt-item .abt-txt .large-txt {
+    font-size: 200% !important;
+  }
+  .about .about-container .r-con .abt-item .abt-txt .small-txt {
+    font-size: 100% !important;
+  }
+  .about .skill-title {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .about .skill-title h1 {
+    font-size: 175%;
+  }
+  .about .skill-title h1 .bg-txt {
+    font-size: 175%;
+  }
+  .about .quality-section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+  .about .quality-section .skill-table {
+    margin-top: 0 !important;
+    padding: 0 1rem;
+  }
+  .about .quality-section .skill-table .skill-item {
+    padding: .5rem;
+  }
+  .about .quality-section .passion {
+    padding: 1.5rem 0;
+  }
+  .about .quality-section .passion .passion-head h1 {
+    font-size: 175%;
+    pointer-events: none;
+  }
+  .about .quality-section .passion .passion-head h1 .bg-txt {
+    font-size: 175%;
+  }
+  .about .quality-section .passion .passion-table {
+    margin-top: 0;
+    grid-gap: 1rem;
+  }
+  .about .quality-section .passion .passion-table .passion-item .passion-name {
+    font-size: 100%;
+  }
+  .about .quality-section .passion .passion-table .passion-item .passion-name h4 {
+    font-size: 125% !important;
+  }
+  .about .quality-section .passion .passion-table .passion-item .desc {
+    font-size: 100% !important;
+    margin-bottom: 0;
+  }
+  .about .timeline {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .contact {
+    padding: 2rem;
+  }
+  .contact .con-title h1 {
+    font-size: 175%;
+  }
+  .contact .con-body {
+    padding: 0;
+  }
+  .contact .con-body .right-con {
+    padding: 0;
+  }
+  .contact .con-body .right-con .heading h1 {
+    font-size: 150%;
+  }
+  .contact .con-body .right-con .contact-form {
+    min-width: 15rem !important;
+    margin-top: .5rem;
+    width: 100%;
+    padding: 0;
+  }
+  .contact .con-body .right-con .contact-form .submit {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=localcss.css.map */
