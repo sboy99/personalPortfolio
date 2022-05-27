@@ -1,177 +1,210 @@
-@media screen and (max-width:600px){   
-   
-    html{
-        font-size: 95%;
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 95%;
+  }
+  header {
+    padding: 0;
+  }
+  .section {
+    padding: 0 0 5rem 0 !important;
+  }
+  .home {
+    .header-content {
+      grid-template-columns: 1fr;
+      .left-header {
+        align-items: center;
+        .name {
+          width: 100%;
+          right: 0 !important;
+          text-align: center !important;
+          font-size: 125%;
+          span {
+            font-size: 200%;
+          }
+        }
+        h1 {
+          margin-bottom: o !important;
+        }
+        p {
+          width: 100%;
+          padding: 0 0.5rem;
+          font-size: 90%;
+          margin-bottom: 0;
+        }
+        h3 {
+          align-self: flex-end;
+          margin-right: 2rem;
+          font-size: 125%;
+        }
+        .btn-con {
+          align-self: center;
+          margin-top: 1.5rem;
+        }
+      }
+      .right-header {
+        display: none;
+      }
     }
-    header{
-        padding: 0;
-       
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    padding-bottom: 0.7rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--bgcol);
+    .control {
+      margin: 0.5rem;
     }
-    section{
-        padding: 0;
+    .float {
+      display: none;
     }
-    .home{
-     .header-content{
-            grid-template-columns: 1fr;          
-        .left-header{
-            align-items: center;
-            .name{
-                width: 100%;
-                right: 0!important;
-                text-align: center!important;
-            }
-            h1{
-                margin-bottom: o!important;    
-            }
-            p{
-                width: 100%;
-            }
-            h3{
-                align-self: flex-end;
-                margin-right: 2rem;
-            }
-            .btn-con{
-                align-self: center;
-                margin-top: 1.5rem;
-            }
-        }    
-        .right-header{
-            display: none;
-        }    
+  }
+  .about {
+    .main-title {
+      padding-top: 1rem;
+      h1 {
+        font-size: 150% !important;
+        .bgtxt {
+          font-size: 125%;
         }
-    }   
-    .controls{
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;       
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--bgcol);
-        .control{
-            margin: .5rem ;
-        }
-        .float{
-            display: none;
-        }
+      }
     }
-    .about{
-        padding: 2rem;
-        .main-title{
-            h1{
-                font-size: 150%!important;           
-        }        
+    .about-container {
+      grid-template-columns: 1fr;
+      padding: 0;
+      .l-con {
+        padding: 0 2rem !important;
+        h4 {
+          font-size: 1.5rem;
+          span {
+            font-size: 150%;
+          }
         }
-        .about-container{
-            grid-template-columns: 1fr;
-            padding: 0;
-            .l-con{
-               padding: 0 2rem !important; 
-              h4{
-                  font-size: 1.5rem;
-                  span{
-                      font-size: 175%;
-                  }
-              } 
-            }
-            .r-con{
-                .abt-item{                    
-                    .abt-txt{
-                        width: 100%;
-                        padding: 1rem;
-                        align-items: center;
-                        .large-txt{
-                        font-size: 200%!important;    
-                        }
-                        .small-txt{
-                        font-size: 100%!important;
-                        }
-                    }
-                }
-            }
+        p {
+          font-size: 90%;
         }
-        .skill-title{
+      }
+      .r-con {
+        grid-template-columns: 1fr;
+        .abt-item {
+          width: 100%;
+          .abt-txt {
             width: 100%;
-            margin-top: 1rem;
-            h1{
-                font-size: 175%;
-                .bg-txt{
-                    font-size: 175%;
-                }
+            padding: 0.5rem;
+            align-items: center;
+            .large-txt {
+              font-size: 200% !important;
             }
-        }
-        .quality-section{
-            grid-template-columns: 1fr;
-            padding: 1rem 0;
-            .skill-table{
-                margin-top: 0 !important;
-                padding: 0 1rem;
-                .skill-item{
-                    padding: .5rem;
-                }
+            .small-txt {
+              font-size: 100% !important;
             }
-            .passion{
-                padding: 1.5rem 0;
-                .passion-head{
-                    h1{
-                        font-size: 175%;
-                        pointer-events: none;
-                        .bg-txt{
-                            font-size: 175%;
-                        }
-                    }
-                }
-                .passion-table{
-                    margin-top: 0;
-                    grid-gap: 1rem;
-                    .passion-item{
-                        .passion-name{
-                            font-size: 100%;
-                            h4{
-                            font-size: 125% !important;
-                        } 
-                        }
-                       .desc{
-                        font-size: 100% !important; 
-                        margin-bottom: 0;      
-                    }
-                    }
-                }
-            }          
+          }
         }
-        .timeline{
-            grid-template-columns: 1fr !important;        
-        }
+      }
     }
-    .contact{
-        padding: 2rem ;
-        .con-title{
-            h1{
-                font-size: 175%;
-            }
+    .skill-title {
+      width: 100%;
+      margin-top: 1rem;
+      h1 {
+        font-size: 175%;
+        .bg-txt {
+          font-size: 175%;
         }
-        .con-body{
-            padding: 0;
-        .right-con{
-            padding: 0;            
-            .heading{
-            h1{
-                font-size: 150%;
-            } 
-
-            }
-            .contact-form{
-                min-width: 15rem !important;
-                margin-top: .5rem;
-                width: 100%;
-                padding: 0;
-                .submit{
-                  width: 40%;
-                }
-            }
+      }
+    }
+    .quality-section {
+      grid-template-columns: 1fr;
+      padding: 1rem 0;
+      .skill-table {
+        margin-top: 0 !important;
+        padding: 0 1rem;
+        .skill-item {
+          padding: 0.5rem;
+          .skill-head {
+            font-size: 100%;
+          }
+          .prgs-bar {
+            gap: 1rem;
+          }
         }
+      }
+      .passion {
+        padding: 1.5rem 0;
+        .passion-head {
+          h1 {
+            font-size: 175%;
+            pointer-events: none;
+            .bg-txt {
+              font-size: 175%;
+            }
+          }
+        }
+        .passion-table {
+          margin-top: 0;
+          grid-gap: 1rem;
+          .passion-item {
+            .passion-name {
+              font-size: 100%;
+              h4 {
+                font-size: 125% !important;
+              }
+            }
+            .desc {
+              padding: 0.5rem 0;
+              font-size: 90% !important;
+              margin-bottom: 0;
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
     }
+    .timeline {
+      padding: 2rem;
+      grid-template-columns: 1fr !important;
+      .tl-item {
+        .details {
+          font-size: 90%;
+        }
+      }
     }
+  }
+  .contact {
+    padding: 2rem 1rem 7rem 1rem !important;
+    .con-title {
+      h1 {
+        font-size: 175%;
+      }
+    }
+    .con-body {
+      padding: 0;
+      .right-con {
+        padding: 0;
+        .heading {
+          h1 {
+            font-size: 150%;
+          }
+        }
+        .contact-form {
+          min-width: 15rem !important;
+          margin-top: 0.5rem;
+          width: 100%;
+          padding: 0;
+          .seg2 {
+            flex-direction: column;
+          }
+          .submit {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
 }
